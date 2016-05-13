@@ -1,0 +1,186 @@
+.content{
+  padding-top: 132px;
+  position: relative;
+  left: 134px;
+  clear: both;
+  background-color: #E6E5ED;
+  overflow: auto;
+  height: 100%;
+  padding-left: 40px;
+  width: 93%;
+  //text-align: center;
+  .card-container{
+    width: 93%;
+    padding-left: 5%;
+    >li{
+      margin-bottom: 20px;
+      //text-align: left;
+    }
+    .card-container-space{
+      margin: 0;
+      padding: 0;
+      .card-style{
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 2%;
+        width: 182px;
+        background: #ffffff;
+        position: relative;
+        .list-inline{
+          padding-left: 12%;
+        }
+        .item-space{
+          width: 60px;
+          text-align: justify;
+          text-align: end;
+          text-align-last: justify;
+          text-justify: distribute;
+        }
+        h5{
+          color: #425a73;
+        }
+        .card-select-img{
+          height: 36px;
+          width: 36px;
+          position: absolute;
+          left:146px;
+          cursor: pointer;
+        }
+        .header-img{
+          position: relative;
+          top:-20px;
+          width: 50px;
+          height: 50px;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+        .header-left{
+          width: 60%;
+          padding-left: 8%;
+          .circle{
+            padding: 0;
+            position: relative;
+            top: -4px;
+          }
+          .status{
+            position: relative;
+            top: -2px;
+          }
+        }
+        ul{
+          margin-bottom: 0;
+        }
+        .footer-img{
+          position: relative;
+          .type-icon{
+            position: absolute;
+            top: 30px;
+            left: 155px;
+          }
+          .type-text{
+            top: 35px;
+            left: 25px;
+            color: #fff;
+            position: absolute;
+          }
+        }
+        .default-style{
+          width: 100%;
+          position: relative;
+          .operation-in-card{
+            background:rgba(255,255,255,0.5);
+            position: absolute;
+            top: -58px;
+            padding-left: 10px;
+            width: 100%;
+            height: 58px;
+            left: 5px;
+          }
+        }
+        .item-close{
+          display:none
+        }
+        .item-open{
+          display: block;
+        }
+      }
+      .card-style.isHover{
+        box-shadow: 2px 3px 2px 3px;
+      }
+    }
+    .go-top{
+      position: fixed;
+      z-index: 22;
+      float: right;
+      bottom: 35px;
+      right: 5%;
+      cursor: pointer;
+    }
+  }
+  .content-table{
+      .table-header{
+          background-color: #32a3db;
+          color: #FFFFFF;
+      }
+      .all-select{
+        background-color:#f8e71d;
+        color: #000;
+        cursor: pointer;
+      }
+      .select-dialog-cell{
+        background-color:#2d3d4c;
+        cursor: pointer;
+      }
+    .table-select{
+      cursor: pointer;
+      .selectedIcon:before{
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    .item-click{
+      background-color:#D1e9f5;
+    }
+    .anticon-caret-right:before{
+      color: #30a3dc;
+    }
+  }
+  .spin-status{
+    position: fixed;
+    left: 45%;
+    top:50%
+  }
+}
+.table-popover{
+  width: 100px;
+  background-color: rgb(208, 234, 247);
+  z-index: 3;
+  .ant-popover-content{
+    padding: 8px 4px;
+    .popover-check-menu{
+      >label{
+        padding:2px 0
+      }
+      .list-popover-check{
+        width: 75px;
+        text-align: left;
+      }
+    }
+  }
+}
+.task-content{
+  background-color: #EEEEEE;
+  padding-top: 97px;
+  position: relative;
+  left: 94px;
+  width: 95%;
+  .task-list-show{
+    margin-left:10px;
+    margin-top:5px;
+  }
+}
+.table-popover-hidden{
+  display: none;
+}

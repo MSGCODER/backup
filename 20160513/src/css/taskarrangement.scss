@@ -1,0 +1,853 @@
+.ant-modal{
+  .ant-modal-content{
+    .ant-modal-body{
+      padding:0;
+      .add-task{
+        position:relative;
+        .popup-windows{
+          position:absolute;
+          width:108%;
+          height:100%;
+          top:0px;
+          background:rgba(55, 55, 55, 0.3);
+          .popup-windows-show{
+            position:absolute;
+            left:50%;
+            background:white;
+            width:400px;
+            height:240px;
+            margin-left:-200px;
+            margin-top:40px;
+            .popup-windows-show-icon{
+              background:#F7F7F7;
+              text-align:left;
+              height:25px;
+              line-height:30px;
+              .alert-icon{
+                background:url('/img/alert.png') no-repeat;
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                margin-left:5px;
+              }
+            }
+            .popup-windows-show-word{
+              margin:58px 0px;
+              font-size:14px;
+            }
+            .popup-windows-show-btn{
+              height:37px;
+              background:red;
+              button{
+                width:50%;
+                height:100%;
+                border:none;
+              }
+              .okbtn{
+                background-color:#2AA2DE;
+                color:white;
+              }
+              .canclebtn{
+                background-color:#E8F0F3;
+              }
+            }
+          }
+        }
+         .title{
+          font-size: 14px;
+          width: 561px;
+          height: 40px;
+          line-height: 40px;
+           color: #495669;
+           background-color:#F1F1F1;
+           font-weight:bold;
+        }
+        .task-dialog-content{
+          width:561px;
+          height:400px;
+          background-color:white;
+          text-align:justify;
+         ul{
+           padding-top:2px;
+           .creator{
+             text-align:center;
+           }
+         }
+          li{
+            margin-top:10px;
+            .startDate{
+             background-color:#EDF4FE;
+              margin-top:-10px;
+              width:508px;
+              margin:0 auto;
+              padding-bottom:5px;
+              .ant-calendar-picker{
+                width:100px;
+              }
+              label{
+                margin-left:20px;
+              }
+              .endDate{
+                margin-left:96px;
+              }
+            }
+          }
+          .create-task-submit{
+
+            margin:5px auto;
+            width:508px;
+            .btn{
+              width:100px;
+              height:40px;
+              border-radius:0;
+            }
+            .ant-btn{
+              border-radius:0;
+              border-color:#DFE3EF;
+            }
+            .create-btn{
+              float:left;
+              background-color:#DFE3EF;
+            }
+            .cancel-btn{
+              float:right;
+              background-color:#DFE3EF;
+            }
+            .create-btn:hover{
+              background-color:#2AA2DE;
+              color:white !important;
+            }
+            .cancel-btn:hover{
+              background-color:#2AA2DE;
+              color:white !important;
+            }
+          }
+          label{
+            margin-left:50px;
+            color: #495669;
+          }
+          .Perio-task{
+            margin-left:27px;
+          }
+          span{
+            font-weight:bold;
+          }
+          .span1{
+            margin-left:50px;
+          }
+          .span2{
+            margin-left:24px;
+          }
+          input{
+            border:1px solid #C6C6C8;
+            border-radius:3px;
+            height:28px;
+          }
+          .inputBox{
+            width:150px;
+          }
+          .ant-calendar-picker{
+            width:150px;
+          }
+          .inputBox-long{
+            width:410px;
+          }
+          .number{
+            margin-left:10px;
+          }
+          .destination{
+            margin-left:59px;
+          }
+          .people{
+            margin-left:62px;
+          }
+        }
+      }
+    }
+  }
+}
+html,body{
+  height:100%;
+  span{
+    font-weight:bolder;
+  }
+  .content-relative{
+    height:100%;
+    .main-task {
+      background-color: #EEEEEE;
+      .row{
+        height:100%;
+      }
+      .main-task-right{
+        height:89%;
+        background:white;
+        margin-top:4px;
+        .completed-task-content{
+          width:100%;
+          .title-grey{
+            background:#AAB3C4;
+            height:30px;
+            color:white;
+            line-height:30px;
+          }
+          .completed-task-header{
+            padding-left:10px;
+          }
+          .completed-task-footer{
+            text-align: center;
+            position:fixed;
+            bottom:0;
+            width:23%;
+          }
+          .completed-task-list{
+            border-bottom:1px solid #A5B0C4;
+            //padding-bottom:19px;
+            position:relative;
+            .triangle-up {
+              width:0;
+              height:0;
+              border-left:12px solid transparent;
+              border-right:12px solid transparent;
+              border-bottom:7px solid #A3AFCF;
+            }
+            .hide-triangle{
+              position:absolute;
+              bottom:0px;
+              left:50%;
+              display:none;
+            }
+            .task-details{
+              display:none;
+              .completed-cars-task{
+                padding:5px 0;
+                background:#F3F6FB;
+              }
+            }
+            .task-types{
+              background:url("/img/mutiple.png") no-repeat;
+              width:47px;
+              height:26px;
+              position:relative;
+              top:5px;
+              display:inline-block;
+              vertical-align:middle;
+              span{
+                position:absolute;
+                top:5px;
+                left:19px;
+              }
+            }
+            .task-types-singal{
+              background:url("/img/singal.png") no-repeat;
+            }
+            .task-number{
+              position:relative;
+              top:5px;
+              vertical-align:middle;
+            }
+            .completed-task-list-row{
+                padding-left:24px;
+                margin-top:8px;
+              .completed-task-list-col{
+
+                span{
+                  vertical-align:middle;
+                }
+                .task-data1{
+                  margin-left:5px;
+                }
+              }
+            }
+            .list-row{
+              margin-bottom:10px;
+            }
+            .icon{
+              display:inline-block;
+              width:13px;
+              height:13px;
+            }
+            .icon-out{
+              background:url("/img/out.png") no-repeat;
+
+            }
+            .icon-time{
+              background:url("/img/icon_time.png") no-repeat;
+
+            }
+            .icon-back{
+              background:url("/img/back.png") no-repeat;
+            }
+            .icon-card{
+              background:url("/img/card.png") no-repeat;
+            }
+            .icon-car{
+              background:url("/img/Oval.png") no-repeat;
+            }
+            .icon-driver{
+              background:url("/img/driver.png") no-repeat;
+            }
+            .icon-destination{
+              background:url("/img/destination.png") no-repeat;
+            }
+            .icon-list-default{
+              background:url("/img/icon_list_default.png") no-repeat;
+            }
+          }
+        }
+
+      }
+      .main-task-content {
+        width: 99%;
+        display:inline-block;
+        .task-card {
+          border-radius: 5px;
+          width: 99.5%;
+          background-color: white;
+          margin-left: 10px;
+          position: relative;
+          padding-bottom: 5px;
+          display:inline-block;
+          margin-top:4px;
+          position:relative;
+          .withdraw-form{
+            padding:5px 0;
+            background:#ECF5FE;
+            .row{
+                width:80%;
+                margin:8px 0;
+              margin-left:14%;
+              .withdraw-label{
+                display:inline-block;
+                width:100px;
+                text-align:right;
+              }
+              input{
+                border: 1px solid #C6C6C8;
+                border-radius: 3px;
+                height: 28px;
+                width:200px;
+              }
+            }
+          }
+          .withdraw-checkbox{
+            text-align:right;
+            margin-top:9px;
+            padding-right:14px;
+          }
+          .withdraw-btn{
+            padding:4px 13px;
+            button{
+              width:80px;
+              height:35px;
+              background:#DFE3EF;
+              border:none;
+            }
+            .save-btn{
+              float:left;
+            }
+            .close-btn{
+              float:right;
+            }
+          }
+          .arranged-task{
+            background:#ECF5FE;
+            width:100%;
+            padding-top:5px;
+            .task-adjustment{
+              width:68%;
+              margin-left:23%;
+            }
+            .withdraw-adjustment{
+              display:inline-block;
+            }
+            .dotted{
+              border-bottom:1px dashed #C6C6D0;
+            }
+            .return-detail{
+              span{
+                color:#B4BDC6;
+              }
+            }
+            li{
+              //border-bottom:1px dashed #C6C6D0;
+              margin-left:58px;
+              padding:5px 0;
+              position:relative;
+              .task-data{
+                width:80%;
+                display:inline-block;
+              }
+              .task-adjustment1{
+                margin-left:153px;
+              }
+              .task-adjustment2{
+                margin-left:184px;
+              }
+              .withDraw{
+                position:absolute;
+                top:16px;
+                right:200px;
+                width:70px;
+                height:30px;
+                color:#C5C5CD;
+                background:#ECF5FE;
+              border:1px solid #C5C5CD;
+              }
+              .withDraw-car{
+                color:#3F9BCC;
+                background:#ECF5FE;
+                border:1px solid #3F9BCC;
+              }
+            }
+          }
+          .addtask-modal{
+            display:none;
+            position:absolute;
+            top:278px;
+            width:100%;
+            height:450px;
+            z-index:100;
+            background:white;
+            .task-details-list-c{
+              .ant-table{
+                margin:7px;
+                width:99%;
+                .blank{
+                  display:inline-block;
+                }
+                th{
+                  background:#2AA2DE;
+                  color:white;
+                  padding: 8px 0px;
+                  text-align:center;
+                  width:202px;
+                  display:inline-block;
+                  border-right: 1px solid #D6F6FF;
+                  border-bottom: none;
+                }
+                th:nth-child(1){
+                  width:50px;
+                }
+                tr:nth-child(odd){
+                  background:#EEEEEE;
+                }
+                tr:nth-child(even){
+                  background:white;
+                }
+                .active{
+                  background:#D0EAF7 !important;
+                }
+                td{
+                  padding: 8px 0px;
+                  text-align:center;
+                  width:200px;
+                  border-right: 1px solid #303C4C;
+                  i{
+                    width:8px;
+                    height:14px;
+                   background:url("/img/triangle_right.png");
+                    display:inline-block;
+                  }
+                }
+                td:nth-child(1){
+                  width:50px;
+                }
+                .div{
+                  width:82px;
+                }
+              }
+              .ant-table-body{
+                height:316px;
+              }
+            }
+            .task-details-list-f{
+              width:100%;
+              height:87px;
+              padding:6px 7px;
+              .btn{
+                height:28px;
+                border:none;
+                border-radius: 3px;
+                padding:5px 3px;
+                width:80px;
+              }
+              .ok-btn{
+                float:left;
+                color:white;
+                background-color:#2AA2DE;
+              }
+              .cancel-btn{
+                float:right;
+                background-color:#E8F0F3;
+              }
+            }
+            .task-details-list-h{
+              width:100%;
+              height:40px;
+              background:#FAFAFC;
+              border:1px solid #F1F1F2;
+              .task-right-item{
+                float: right;
+                .list-inline{
+                  .advanced-search-item{
+                    float:right;
+                  }
+                  .search-item{
+                    position: relative;
+                    top: 6px;
+                    right:0%;
+                    width: 78%;
+                    .search-btn{
+                      padding: 0 !important;
+                      border-left: 0;
+                      position: relative;
+                      left: -52px;
+                      background-color: #fff;
+                      top: 0;
+                      color: #666;
+                    }
+                  }
+                  .search-item-block-show{
+                      z-index: 3;
+                    }
+                  .search-text{
+                    position: relative;
+                    top: -3px;
+                    left:7px;
+                  }
+                }
+              }
+              .list-inline{
+                display:inline-block;
+                .task-color{
+                  width: 40px;
+                  height: 20px;
+                  line-height:20px;
+                  text-align:center;
+                  padding: 0 !important;
+                  color: white;
+                  border-radius: 5px;
+                  margin-top:12px;
+                }
+                .idle{
+                  margin-left: 23px;
+                  background-color: #7ED320;
+                }
+                .outing{
+                  margin-left: 22px;
+                  background-color:#F0C22F;
+                }
+              }
+
+            }
+          }
+          .edit-car-task{
+            width:80%;
+            background:#ECF5FE;
+            margin:10px 76px;
+            padding:10px 31px;
+            position:relative;
+            .div-inline{
+              display:inline-block;
+              position:relative;
+              .plus-icon{
+                display:inline-block;
+                width:13px;
+                height:13px;
+                background:url("/img/plus.png");
+                position:absolute;
+                right:9px;
+                top:6px;
+              }
+            }
+            input{
+              border: 1px solid #C6C6C8;
+              border-radius: 3px;
+              height: 28px;
+            }
+            button{
+              color:#3F9BCA;
+              border:1px solid #3F9BCA;
+              height: 28px;
+              background-color:#ECF5FE;
+              width:55px;
+              border-radius: 3px;
+              font-weight:bold;
+              position:absolute;
+              right:30px;
+              top:10px;
+            }
+            .edit-car-task-input{
+              width:89%;
+              input{
+                width:219px;
+              }
+            }
+            .add-task-details{
+              .add-task-d-li{
+                margin-top:10px;
+                position:relative;
+                .add-task-row{
+                  width:89%;
+                  border:1px dashed #BFC6CE;
+                  padding:5px 0;
+                  .icon{
+                    margin:0 5px;
+                  }
+                }
+                .delete-btn{
+                  position:absolute;
+                  right:14px;
+                  top:12px;
+                  color:#3F9BCA;
+                  cursor:pointer;
+                }
+              }
+            }
+            .only-current-task{
+              margin-top:18px;
+              text-align: right;
+              display: inline-block;
+              width: 100%;
+            }
+          }
+          .periodic-task{
+            .edit-btn{
+              width:80%;
+              margin-left:76px;
+              padding:15px 0 20px 0;
+              position:relative;
+              button{
+                height:28px;
+                border:none;
+                border-radius: 3px;
+                padding:5px 3px;
+                height:30px;
+              }
+              .save-send-btn{
+                float:left;
+                background:#29A3DD;
+                color:white;
+              }
+              .save-btn{
+                background:#DFE3EE;
+                width:75px;
+                position:absolute;
+                left:50%;
+                margin-left:-37px;
+              }
+              .close-btn{
+                float:right;
+                background:#DFE3EE;
+                width:75px;
+              }
+            }
+            .periodic-task-btn{
+              margin-left:75px;
+              button{
+                height:28px;
+                border:none;
+                border-radius: 3px;
+                padding:5px 3px;
+              }
+              .btn1{
+                margin-left:25px;
+                background:#29A3DD;
+                color:white;
+              }
+              .btn2{
+                margin-left:10px;
+                background:#DFE3EE;
+              }
+            }
+            .periodic-task-details{
+              background:#ECF5FE;
+              margin-left:76px;
+              width:80%;
+              .ant-calendar-picker{
+                width:130px;
+                .ant-input{
+                  height:30px;
+                }
+              }
+              .startDate{
+                width:100%;
+                padding:10px 0;
+                margin-top:10px;
+                li:nth-child(2){
+                  margin:7px 29px;
+                  .ant-checkbox{
+                    margin-left:60px;
+                  }
+                }
+                .startDate-endDate{
+                  width:83%;
+                  height:50px;
+                  padding:7px 29px;
+                  .startDate-endDate-left{
+                    float:left;
+                  }
+                  .startDate-endDate-right{
+                    float:right;
+                  }
+                }
+              }
+            }
+          }
+          .task-edit-page{
+            width:85%;
+            margin:0 auto;
+            .task-edit-row{
+              margin-top:5px;
+              label{
+                width: 50px;
+                text-align: justify;
+                text-align: end;
+                text-align-last: justify;
+                text-justify: distribute;
+              }
+              .colon{
+                margin:0 5px;
+              }
+              input{
+                border: 1px solid #C6C6C8;
+                border-radius: 3px;
+                height: 28px;
+                width:200px;
+              }
+              .vehicles-marker{
+                width:854px;
+              }
+              .task-edit-col{
+                label{
+                  margin-left:125px;
+                }
+                .back-time-label{
+                  width:74px;
+                  margin-left:101px;
+                }
+              }
+            }
+          }
+          .click-down {
+            position: absolute;
+            top: 50px;
+            right: 60px;
+            display: inline-block;
+            width: 13px;
+            height: 10px;
+            background: url("/img/Triangle.png") no-repeat;
+          }
+          .hide-data {
+            display: none;
+            .hide-btn2{
+              display:none;
+            }
+          }
+          .inner-icon{
+            background-size: cover;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+          }
+          .edit-inner-icon {
+            background: url("/img/edit_task.png") no-repeat;
+          }
+          .cancel-task-icon {
+             background: url("/img/icon_cancel.png") no-repeat;
+           }
+          .return-car-icon {
+            background: url("/img/icon_back.png") no-repeat;
+          }
+          .task-number_card {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            height: 30px;
+            line-height: 30px;
+            color: white;
+            background-color: #B9E986;
+            margin-bottom: 6px;
+            padding-left: 43px;
+            .edit-icon {
+                float: right;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                background-color: #7ED320;
+                border-top-right-radius: 5px;
+              }
+            .icon-red{
+              background:#EC4C4E;
+            }
+            .icon-blue{
+              background:#7ED320;
+            }
+            .icon-orange{
+              background:#F5A720;
+            }
+          }
+          .red{
+            background:#F3686B;
+          }
+          .orange{
+            background:#F0C22F;
+          }
+          .blue{
+            background:#B9E986;
+          }
+          .task-data {
+            margin-left: 23px;
+          }
+          .user-p {
+            margin-left: 12px;
+          }
+          span {
+            font-weight: bold;
+          }
+          .task-hover {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background: #7ED320;
+            display: none;
+            border-top-right-radius: 5px;
+            .inline-block{
+              display:inline-block;
+            }
+            .task-hover-li-blue {
+              border-bottom: 2px solid #B9E986;
+            }
+            .task-hover-li-red {
+              border-bottom: 2px solid #F3686B;
+            }
+            .task-hover-li-orange {
+              border-bottom: 2px solid #F0C22F;
+            }
+            li {
+              width: 86px;
+              height: 30px;
+              line-height: 30px;
+              color: white;
+              span {
+                margin-left: 5px;
+              }
+            }
+          }
+          .icon-red{
+            background:#EC4C4E;
+          }
+          .icon-blue{
+            background:#F5A720;
+          }
+          .icon-orange{
+            background:#7ED320;
+          }
+        }
+      }
+      }
+    }
+  }
+
+

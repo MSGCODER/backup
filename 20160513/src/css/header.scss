@@ -1,0 +1,36 @@
+body{
+  .header-content{
+    min-width: 1024px;
+    background-color: #FAFAFC;
+    padding-left: 40px;
+    ul{
+      margin-bottom: 0;
+    }
+    .header-text{
+      border-bottom: 1px solid #e2e2e4;
+    }
+    color: #000000;
+    h2{
+      margin-top: 10px;
+    }
+    h5{
+      margin-bottom: 10px;
+    }
+    .header-title-left{
+      position: relative;
+      left: 134px;
+    }
+    .headerOperationSpace{
+      //margin-left: 20%;
+      float: right;
+    }
+    .header-img{
+      background-image:url('/img/icon_user_head_have.png') ;
+      border-radius:50%;
+      width: 26px;
+      height: 26px;
+      position: relative;
+      top: 6px;
+    }
+  }
+}

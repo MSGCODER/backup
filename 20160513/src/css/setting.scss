@@ -1,0 +1,176 @@
+.setting-content{
+  background-color: #e6e5ed;
+  height: 100%;
+  .setting-layout{
+    width: 91%;
+    position: relative;
+    left: 153px;
+    button{
+      border-radius: 0;
+      width: 135px;
+    }
+    padding-top: 60px;
+    padding-right: 20px;
+    .setting-container{
+      border: 20px solid #FFF;
+      background-color: #f4f5f7;
+      min-height: 550px;
+      .inner-container{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .item-space{
+          padding-top: 10px;
+        }
+        .left-select{
+          padding-right: 20px;
+          text-align: right;
+        }
+        .not-choose-item{
+          opacity: 0.5;
+        }
+        .right-view{
+          margin-top: 20px;
+          width: 182px;
+          background-color: #ffffff;
+          .header-img{
+            position: relative;
+            top:-20px
+          }
+          .list-inline{
+            padding-left: 12%;
+          }
+          .footer-img{
+            position: relative;
+            .type-icon{
+              position: absolute;
+              top: 30px;
+              left: 155px;
+            }
+            .type-text{
+              top: 35px;
+              left: 25px;
+              color: #fff;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+    .setting-footer{
+      background-color: #ffffff;
+      .btn-right{
+        text-align: right;
+        padding:20px 20px 20px 0px;
+      }
+      .btn-left{
+        padding:20px 0 20px 20px;
+      }
+      .ant-btn-primary{
+        background-color: #dfe3ef;
+        color: #000;
+        border-color:#dfe3ef;
+      }
+      .ant-btn-primary:hover, .ant-btn-primary:focus{
+        background-color: #2ba2da;
+        border-color: #2ba2da;
+        color: #fff;
+      }
+    }
+  }
+  .task-setting{
+    width: 85%;
+    .task-setting-content{
+      background-color: #f4f5f7;
+      padding: 10px;
+      border: 15px solid #FFF;
+      .not-choose-item>li:not(:first-child){
+        opacity: 0.5;
+      }
+      .setting-task-card{
+        padding-top: 10px;
+        .setting-task-code{
+          color: #fff;
+          height: 30px;
+          border-radius: 6px 6px 0 0;
+          .code{
+            display: inline-block;
+            padding: 6px 0 6px 25px;
+          }
+          .setting-task-icon{
+            float: right;
+            width: 40px;
+            padding: 6px 5px 6px 13px;
+            border-radius: 0 6px 0 0;
+            height: 30px;
+
+          }
+        }
+        .setting-task-code.yellow{
+          background-color: #f0c22f;
+          .yellow-icon{
+            background-color: #f5a623;
+          }
+        }
+        .setting-task-code.red{
+          background-color: #f3686b;
+          .red-icon{
+            background-color: #ec4c4d;
+          }
+        }
+        .setting-task-body{
+          background-color: #FFF;
+          padding: 10px;
+          min-height: 66px;
+          .content-row:not(:last-child){
+            //padding-bottom: 5px;
+          }
+          .content-row{
+            .label-space{
+               display: inline-block;
+                margin-left: 5px;
+            }
+          }
+          .caret-down-col{
+            position: relative;
+            top: 12px;
+            left: 15px;
+          }
+        }
+        .task-setting-checkboxs{
+          margin-top: 15px;
+          .task-setting-checkbox{
+
+          }
+        }
+      }
+      .task-setting-tip{
+        text-align: right;
+        padding-top: 50px;
+        label{
+          display: block;
+        }
+        .preview{
+          padding-right: 20px;
+          padding-bottom: 15px;
+        }
+        .detail{
+          padding-right: 15px;
+        }
+      }
+    }
+    .task-setting-content:first-child{
+      border-bottom: 0;
+    }
+    .task-setting-content:last-child{
+      border-top: 0;
+    }
+    .setting-footer{
+      .btn-left{
+        padding: 10px 0 15px 20px !important;
+      }
+      .btn-right{
+        padding: 10px 20px 15px 0 !important;
+      }
+    }
+  }
+}
